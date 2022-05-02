@@ -1,3 +1,5 @@
+# Distribution files
+dist
 
 # OSX
 #
@@ -8,7 +10,7 @@
 node_modules/
 npm-debug.log
 yarn-error.log
-  
+
 
 # Xcode
 #
@@ -28,8 +30,11 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-project.xcworkspace
-      
+*.xcworkspace/
+
+# CocoaPods
+/ios/Pods/
+
 
 # Android/IntelliJ
 #
@@ -38,9 +43,17 @@ build/
 .gradle
 local.properties
 *.iml
+android/.project
+android/.settings/org.eclipse.buildship.core.prefs
+DemoApp/android/.settings/org.eclipse.buildship.core.prefs
+DemoApp/android/.project
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
-      
+
+# Local testing workflow
+
+tmp/
+DemoApp/package-lock.json
